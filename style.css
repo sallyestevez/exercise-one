@@ -1,5 +1,9 @@
-body {
-    box-sizing: border-box;
+* {
+    box-sizing: border-box; 
+}
+
+body, h1, h2, h3, h4 {
+    font-family: sans-serif;
     margin: 0;
 }
 
@@ -14,4 +18,49 @@ header nav { /* hyperspecific - targets one nav (in header) */
 
 header nav a {
 
+}
+
+section.section-element { /* going to be general for every component */
+    margin: 0;
+    padding: 40px;
+}
+
+section.box-model-section { /* specific for certain component */
+    background-color: #CFF1CA;
+}
+
+.interior {
+    border: 10px solid #000;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px;
+    width: 100%;
+}
+
+.interior h1 {
+    color: #000;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 45px;
+}
+
+.interior h2 {
+    color: #000;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.interior p {
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.0;
+}
+
+.box-model-interior {
+    background-color: #9ef490;
+    border-color: #187908;
+    min-height: 600px;
 }
