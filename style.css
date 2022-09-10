@@ -29,6 +29,10 @@ section.box-model-section { /* specific for certain component */
     background-color: #CFF1CA;
 }
 
+section.heading-section {
+    background-color: #F1CAF0;
+}
+
 .interior {
     border: 10px solid #000;
     margin: 0 auto;
@@ -63,4 +67,43 @@ section.box-model-section { /* specific for certain component */
     background-color: #9ef490;
     border-color: #187908;
     min-height: 600px;
+}
+
+.heading-section-interior {
+    border: none;    
+}
+.heading-section-interior h1 {
+    color: #6C0468;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.5px;
+    margin-bottom: 40px;
+}
+
+.heading-section-interior h2 {
+    color: #6C0468;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.heading-section-interior h3 {
+    color: #6C0468;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.heading-section-interior h4 {
+    color: #6C0468;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.heading-section-interior p {
+    color: #6C0468;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
 }
