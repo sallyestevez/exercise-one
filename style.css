@@ -12,13 +12,30 @@ header {
     padding: 40px;
 }
 
-/* header nav { 
-
+header nav { 
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
  }  
 
 header nav a {
+    color: black;
+    font-weight: bold;
+    margin: 0 20px;
+    padding: 5px;
+    text-decoration: none;
+}
 
-} */
+header nav a:last-of-type {
+    margin-right: 0;
+}
+
+header nav a:first-of-type {
+    margin-left: 0;
+}
 
 section.section-element { /* going to be general for every component */
     margin: 0;
@@ -104,7 +121,7 @@ section.box-model-section { /* specific for certain component */
 .interior-flex--horizontal, 
 .interior-flex--vertical {
     display: flex;
-    flex-basis: 48%;
+    flex-basis: 49%;
     height: 324px;
     padding: 20px;
 }
@@ -210,8 +227,11 @@ section.box-model-section { /* specific for certain component */
     left: 48px;
 }
 
-.footer-section-interior {
+footer {
     background-color: #FFC3C3;
+}
+
+.footer-section-interior {
     border: none;
     margin: 0 auto;
     padding-bottom: 20px;
@@ -221,4 +241,25 @@ section.box-model-section { /* specific for certain component */
 
 .footer-section-interior p {
     font-size: 24px;
+}
+
+.simple-javascript-section {
+    background-color: #FAEFD3;
+}
+
+.simple-javascript-section .interior {
+    border-color: #644904;
+    color: #644904;
+}
+
+.counter-button-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.counter-button-wrapper p {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    margin: 0 40px 0 0;
 }

@@ -10,11 +10,11 @@
 <body>
     <header>
         <nav>
-            <a href="">Box Model</a>
-            <a>Flexbox</a>
-            <a>Positioning Elements</a>
-            <a>Heading Usage</a>
-            <a>Simple Javascript</a>
+            <a href="#box-model">Box Model</a>
+            <a href="#flex-box">Flexbox</a>
+            <a href="#positioning-section">Positioning Elements</a>
+            <a href="#heading-section">Heading Usage</a>
+            <a href="#simple-javascript">Simple Javascript</a>
         </nav>
     </header>
     <main>
@@ -72,7 +72,23 @@
             </div>
         </section>
         <section id="simple-javascript" class="simple-javascript-section section-element">
+            <script>
+                let counter = 0;
+
+                function increaseCounterValue() {
+                    counter = counter + 1;
+                    const counterDiv = document.querySelector('#counter');
+                    counterDiv.innerHTML = counter;
+                }
+            </script>
             <div class="interior">
+                <h1>Simple JavaScript</h1>
+                <div class="counter-button-wrapper">
+                    <p id="counter">0</p>
+                </div>
+                <div id="button">
+                    <button onclick="increaseCounterValue()">Click to Increase</button>
+                </div>
             </div>
         </section>
     </main>
