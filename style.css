@@ -88,6 +88,7 @@ section.box-model-section { /* specific for certain component */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
 }
 
 .interior-flex > div {
@@ -121,7 +122,7 @@ section.box-model-section { /* specific for certain component */
 .interior-flex--horizontal, 
 .interior-flex--vertical {
     display: flex;
-    flex-basis: 49%;
+    flex-basis: 49.75%;
     height: 324px;
     padding: 20px;
 }
@@ -131,7 +132,6 @@ section.box-model-section { /* specific for certain component */
     background-color: #FFECE5;
     border: 5px solid #DD4414;
     flex-basis: 33%;
-    
 }
 
 .interior-flex--horizontal > div {
@@ -150,7 +150,6 @@ section.box-model-section { /* specific for certain component */
 .interior-flex--vertical > div:last-of-type {
     margin: 0;
 }
-
 
 .heading-section {
     background-color: #F1CAF0;
@@ -262,4 +261,17 @@ footer {
     font-weight: 700;
     line-height: 74px;
     margin: 0 40px 0 0;
+}
+
+button {
+    text-align: center;
+    background-color: #CDC5B1;
+    border: 3px solid #79756C;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 15px 20px 15px 20px;
+}
+
+button:hover {
+    background-color: #c9ba97;
 }
