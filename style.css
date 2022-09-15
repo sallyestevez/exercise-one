@@ -12,13 +12,13 @@ header {
     padding: 40px;
 }
 
-header nav { /* hyperspecific - targets one nav (in header) */
+/* header nav { 
 
-}
+ }  
 
 header nav a {
 
-}
+} */
 
 section.section-element { /* going to be general for every component */
     margin: 0;
@@ -27,10 +27,6 @@ section.section-element { /* going to be general for every component */
 
 section.box-model-section { /* specific for certain component */
     background-color: #CFF1CA;
-}
-
-section.heading-section {
-    background-color: #F1CAF0;
 }
 
 .interior {
@@ -42,7 +38,6 @@ section.heading-section {
 }
 
 .interior h1 {
-    color: #000;
     font-size: 64px;
     font-weight: 700;
     line-height: 1.5;
@@ -50,14 +45,12 @@ section.heading-section {
 }
 
 .interior h2 {
-    color: #000;
     font-size: 32px;
     font-weight: 400;
     line-height: 1;
 }
 
 .interior p {
-    color: #000;
     font-size: 32px;
     font-weight: 700;
     line-height: 1.0;
@@ -69,11 +62,89 @@ section.heading-section {
     min-height: 600px;
 }
 
-.heading-section-interior {
-    border: none;    
+.flex-box-section {
+    background-color: #F1D3CA;
 }
-.heading-section-interior h1 {
+
+.interior-flex {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.interior-flex > div {
+    background-color: #FF9371;
+    border: 10px solid #7D260B;
+    margin: 0 auto 40px auto;
+}
+
+.interior-flex--top {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.interior-flex--top > div {
+    align-items: center;
+    background-color: #FFECE5;
+    border: 5px solid #DD4414;
+    display: flex;
+    height: 170px;
+    justify-content: center;
+    margin: 40px auto 40px auto;
+    max-width: 825px;
+    width: 100%;
+   
+}
+
+.interior-flex--top > div > h1 {
+    margin: 0;
+}
+
+.interior-flex--horizontal, 
+.interior-flex--vertical {
+    display: flex;
+    flex-basis: 48%;
+    height: 324px;
+    padding: 20px;
+}
+
+.interior-flex--horizontal > div, 
+.interior-flex--vertical > div {
+    background-color: #FFECE5;
+    border: 5px solid #DD4414;
+    flex-basis: 33%;
+    
+}
+
+.interior-flex--horizontal > div {
+    margin-right: 20px;
+}
+
+.interior-flex--vertical > div {
+    margin-bottom: 20px;
+}
+
+.interior-flex--vertical {
+    flex-direction: column;
+}
+
+.interior-flex--horizontal > div:last-of-type, 
+.interior-flex--vertical > div:last-of-type {
+    margin: 0;
+}
+
+
+.heading-section {
+    background-color: #F1CAF0;
+}
+
+.heading-section-interior {
+    border: none;
     color: #6C0468;
+}
+
+.heading-section-interior h1 {
     font-size: 64px;
     font-weight: 700;
     line-height: 1.5px;
@@ -81,29 +152,73 @@ section.heading-section {
 }
 
 .heading-section-interior h2 {
-    color: #6C0468;
     font-size: 40px;
     font-weight: 700;
     line-height: 1.5;
 }
 
 .heading-section-interior h3 {
-    color: #6C0468;
     font-size: 64px;
     font-weight: 700;
     line-height: 1.5;
 }
 
 .heading-section-interior h4 {
-    color: #6C0468;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.5;
 }
 
 .heading-section-interior p {
-    color: #6C0468;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.5;
+}
+
+.positioning-section {
+    background-color: #CAD7F1;
+}
+
+.positioning-section .interior {
+    background-color: #85C4FF;
+    border-color: #0E3F9E;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.positioning-section h1 {
+    position: relative;
+    z-index: 1;
+}
+
+.circle, 
+.square {
+    background-color: #4480F4;
+    border: 10px solid #0E3F9E;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.circle.circle-one {
+    bottom: 48px;
+    left: 48px;
+}
+
+.footer-section-interior {
+    background-color: #FFC3C3;
+    border: none;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.footer-section-interior p {
+    font-size: 24px;
 }
